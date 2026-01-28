@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noufel Ghayati's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #e0e0e0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #a0a0a0;
+            font-weight: 300;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #252525, #1f1f1f);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.6);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #434343 0%, #000000 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .card-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .card-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #b0b0b0;
+            margin-bottom: 25px;
+        }
+
+        .rating-section {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+
+        .stars {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 12px;
+        }
+
+        .star {
+            color: #ffa500;
+            font-size: 1.2rem;
+        }
+
+        .star.empty {
+            color: #444;
+        }
+
+        .rating-comment {
+            font-size: 0.95rem;
+            color: #999;
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1024px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .card-image {
+                height: 200px;
+            }
+
+            .card-content {
+                padding: 20px;
+            }
+        }
+
+
+        #map { 
+            position: relative; 
+            top: 0; 
+            bottom: 0; 
+            width: 100%; 
+            height: 500px;
+            margin-bottom:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Noufel Ghayati - Portfolio</h1>
+            <p class="subtitle">A collection of my recent GIS related projects</p>
+        </header>
+
+
+        <div class="projects-grid">
+            <div class="card">
+                <img src="images/1.png" alt="Interactive 3D Pool Map: Custom WordPress Booking Solution" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive 3D Pool Map: Custom WordPress Booking Solution</h2>
+                    <p class="card-description">Developed a custom 3D interactive pool booking system for WordPress using MapboxGL JS and Threebox, seamlessly integrated with YITH Booking Plugin. Created detailed 3D models of chairs and umbrellas in SketchUp and implemented them into an immersive web map experience where users can select dates and visualize real-time availability. The solution transforms traditional booking into an engaging visual interface, allowing customers to explore the pool area, see exactly which umbrellas are available, and select their preferred spot before confirming their reservation.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/2.png" alt="Interactive Map + Android App - ENELCYPHER - Freestyling Social Events" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive Map + Android App - ENELCYPHER - Freestyling Social Events</h2>
+                    <p class="card-description">Developed a WordPress-based web application for the freestyle community across South America. The platform features an interactive map displaying freestyle events, complete user authentication, and profile management. Users can RSVP to events or create new ones by dropping pins and submitting details for admin approval. Additionally, built and published an Android app to Google Play Store that provides mobile access to the web platform, extending the community's reach.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/3.png" alt="WP Interactive Map - USA Counties Covered - ACF" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">WP Interactive Map - USA Counties Covered - ACF</h2>
+                    <p class="card-description">The web map developed was about displaying covered counties and office locations for Riverside Home Care. Counties and locations are dynamic and imported from ACF in Wordpress.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/4.png" alt="Interactive Trip Maps - Itineraries - MapboxGL JS" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive Trip Maps - Itineraries - MapboxGL JS</h2>
+                    <p class="card-description">Developed 32 interactive Mapbox GL JS maps for WordPress showcasing island travel routes with animated ant path effects. Users can click route lines to view distance and travel duration between locations. Integrated with Advanced Custom Fields (ACF) for easy content management, allowing non-technical updates to routes and waypoints. Implemented smooth line animations, GeoJSON route data handling, and responsive design. Delivered a scalable solution transforming static route information into an engaging visual experience with optimal performance across all map instances.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel and his expertise absolutely saved the day. He is amazingly talented and helpful. Would recommend to anyone! I never send bonuses to contractors but for him I happily did!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/5.png" alt="QGIS Analysis - Interactive Web Map - MapboxGL JS" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">QGIS Analysis - Interactive Web Map - MapboxGL JS</h2>
+                    <p class="card-description">- Processed pipelines width/length with QGIS. - Interactive Web Map development with MapboxGL JS.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel finished our project in a timely manner and met all of our requirements. Great to work with!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/6.png" alt="Interactive Web Map - Revenue by Suburb in Australia - Mapbox" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive Web Map - Revenue by Suburb in Australia - Mapbox</h2>
+                    <p class="card-description">- Import CSV including revenue reports by suburb in Australia - Displays an interactive heatmap with filters. - Geocoding Addresses.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/7.png" alt="Interactive Globe Web Map - MapboxGL JS -" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive Globe Web Map - MapboxGL JS -</h2>
+                    <p class="card-description">The web map is connected to a Google Sheet including all data for each country.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"If you need a map, a globe, geographic interaction, whatever - Noufel is your guy. I WILL NOT be looking for another specialist in this field. You only need one, and you need the best; I'm just glad I found him :)"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/8.png" alt="US Census Tracts - Demographics & Traffic Data - Interactive Web Map" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">US Census Tracts - Demographics & Traffic Data - Interactive Web Map</h2>
+                    <p class="card-description">This web map allows users to search for an address, then displays the average census tracts demographic & traffic data inside 3 radiuses (1 mile, 3 miles and 5 miles). Data are fetched directly from the Census Bureau API</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel was a pleasure to work with and has created a professional and elegant final product. I use upwork a lot and Noufel is at the top of freelancers for quality and attentiveness."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/9.png" alt="TALL Stack - Beach Discovery Platform" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">TALL Stack - Beach Discovery Platform</h2>
+                    <p class="card-description">Built a full-stack beach discovery platform using Tall Stack (Tailwind, Alpine.js, Laravel, Livewire). Developed automated Google Places API scrapers to collect 500+ US beaches, nearby restaurants, parking locations, and calculated optimal beach entrances. Features include dynamic landing page, interactive beach cards, detailed beach profiles with live weather/water temperature data, restaurant recommendations, and user review system. Implemented responsive design with seamless navigation and real-time data updates for enhanced user experience.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/10.png" alt="Webflow - Interactive web map - Projects mapping" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Webflow - Interactive web map - Projects mapping</h2>
+                    <p class="card-description">Simple Interactive web map for a projects website. Done with Mapbox GL JS on Webflow.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/11.png" alt="Bubble.io Interactive Routing App" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Bubble.io Interactive Routing App</h2>
+                    <p class="card-description">Added custom Routing and Directions calculations using geojson-path-finder library in a Bubble.io app. - Bubble.io Plugin Development. - MapboxGL JS - TurfJS</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel is an exceptional engineer who I welcome to join any of my future dev teams as he is always a wonderful addition to any project with his quality and efficient work. I'm always fascinated by how he is able to solve complex problems quickly!"</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/12.png" alt="Water Quality Monitoring Stations Map" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Water Quality Monitoring Stations Map</h2>
+                    <p class="card-description">Created an interactive mapping application for visualizing water quality monitoring stations across Cape Cod Bay. Features include custom SVG markers with status-based color coding (active/inactive/planned), detailed popups with station information and parameters, satellite imagery basemap integration, and comprehensive legend. Displays real-time and historical water quality data from multiple organizations including CCS, Mass Bays NEP, and Cape Cod Cooperative Extension.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/13.png" alt="WP - Interactive Location Mapping & Filtering Tool" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">WP - Interactive Location Mapping & Filtering Tool</h2>
+                    <p class="card-description">Built a comprehensive web app for mapping and analyzing location data with advanced filtering capabilities. Features include Mapbox integration with custom drawing tools (polygon, rectangle, circle), user geolocation with radius selection, category-based filtering with dynamic color coding, and real-time search/sort functionality. Includes automated geocoding for missing coordinates, WordPress API integration, Excel export functionality, and responsive design with loading states.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/14.png" alt="WP Interactive Web Map - Dealer Locator" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">WP Interactive Web Map - Dealer Locator</h2>
+                    <p class="card-description">Built a responsive web app with Mapbox integration for finding authorized dealers across USA/Canada. Features include dynamic product filtering (3 categories), Google Sheets API integration, mobile-optimized interface with dropdowns, and interactive map with hover effects. Users can click states/provinces to view dealer listings with contact info and product badges. Responsive design adapts from desktop map view to mobile dropdown navigation.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel is the best. He is so knowledgeable about all things web related. He is my go to guy!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/15.png" alt="ProdCity WP - Interactive Web Map - Music Producer Directory" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">ProdCity WP - Interactive Web Map - Music Producer Directory</h2>
+                    <p class="card-description">Developed a comprehensive WordPress solution featuring an interactive Mapbox-powered map with real-time filtering capabilities for a music producer directory. The project includes a responsive dual-panel interface with dynamic search filters, custom post type integration, and privacy-enhanced location display.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Everything was perfect, very good communication and all the requirements were met."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/16.png" alt="WP - SOLO Woman Interactive Web Map (Pin Your Location)" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">WP - SOLO Woman Interactive Web Map (Pin Your Location)</h2>
+                    <p class="card-description">Developed a comprehensive interactive mapping solution for SOLO Woman community platform. Built custom MapBox integration with real-time location pinning, animated markers, and advanced filtering system. Features include WPForms integration, user role-based visibility, inspirational quote carousel, and mobile-responsive design. Created dynamic filter panels with color-coded categories and performance-optimized animations. Delivered engaging community visualization tool that transforms static listings into interactive global map. Tech: WordPress, PHP, JavaScript, MapBox GL JS, WPForms, ACF</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/17.png" alt="150+ Printable Maps for various assets" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">150+ Printable Maps for various assets</h2>
+                    <p class="card-description">150+ Printable Maps for various assets in Saudi Arabia.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/18.png" alt="Interactive Global Idea-Sharing Platform: Location-Based Social Map" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive Global Idea-Sharing Platform: Location-Based Social Map</h2>
+                    <p class="card-description">Developed an interactive web map application connecting users worldwide through location-based sharing. Integrated Mapbox GL JS with Bubble.io to create a platform where users can register, have their location automatically saved and displayed on a global map, and share ideas. Features include secure authentication, real-time geolocation mapping, comprehensive profile management (photos, bio, Instagram links), and an intuitive interface for discovering other users' profiles by clicking map locations. Demonstrates expertise in mapping technology and no-code solutions.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/19.png" alt="3D Interactive Web Map - Bubble.io - 3D Models integration - Threebox" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">3D Interactive Web Map - Bubble.io - 3D Models integration - Threebox</h2>
+                    <p class="card-description">3D Interactive Web Map with 3D buildings built with Google Sketchup. Libraries used: - ThreeboxJS & Mapbox GL JS</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/20.png" alt="Real-Time users concentration - Wordpress Interactive Web Map" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Real-Time users concentration - Wordpress Interactive Web Map</h2>
+                    <p class="card-description">Provides real-time users location on an interactive web map.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/21.png" alt="GIS data extraction and research of fire-damaged homes" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">GIS data extraction and research of fire-damaged homes</h2>
+                    <p class="card-description">GIS data extraction and research of fire-damaged homes in LA, USA. Real estate data extraction of more than 10,000 fire damaged homes (from RentCast): - Homeowner information - Most recent property valuation etc..</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"This was a complex task that required cross-referencing data from multiple sources and organizing it by address. What stood out about Noufel was his clear communication and step-by-step explanations throughout the process. Some of the data we needed wasn’t readily accessible through public sources, but Noufel identified a specialized tool, guided me through the signup process, and used its API to achieve the desired results. He exceeded expectations and delivered the information we needed with impressive efficiency."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/22.png" alt="GIS Chatbot for Wordpress" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">GIS Chatbot for Wordpress</h2>
+                    <p class="card-description">Developed a Chatbot for a Wordpress website. It checks for the entered address if it's within some water districts of Texas, USA.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Working with Noufel was an absolute joy. He's a fantastic collaborator: asks thoughtful questions, makes really smart suggestions, and his broad range of technical skills are all absolutely TOP NOTCH. He delivered everything I initially asked for and more, and at an astonishing speed. The end result of the project was far better than I was hoping for, and I can't wait to get his help on several other backlog/wishlist projects. i will certainly be hiring him again soon, and I recommend you do, too!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/23.png" alt="Squarespace - Interactive Web Map - Real Estate Project" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Squarespace - Interactive Web Map - Real Estate Project</h2>
+                    <p class="card-description">Interactive web maps development for a real estate company based in North Carolina. Around 18 maps for all NC cities, with all amenities (Schools/Hospitals/Parks etc.).</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"I loved working with Noufel. He was good at what he did, listened/communicated well, was patient and worked with me to achieve our goals. I would happily work with him again."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/24.png" alt="Static Maps for Mail Pieces - More than 28k PDFs -" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Static Maps for Mail Pieces - More than 28k PDFs -</h2>
+                    <p class="card-description">Mail pieces generation with Mapbox Static Image API & Python scripts</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"I introduced many challenges that fell outside the scope of the contract, but Noufel never took issue with anything. There was absolutely no pushback on anything, and he was quick to find a solution at every point. He's really easy to communicate with, and somehow understood my convoluted requests."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/25.png" alt="GIS Analysis - Auto Kernel Density Estimation - Home Range Area Est." class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">GIS Analysis - Auto Kernel Density Estimation - Home Range Area Est.</h2>
+                    <p class="card-description">GIS Analysis - Autocorrelated Kernel Density Estimation - Home Range Area Estimation.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"I would recommend Noufel for spatial data analysis and I am sure his skills extend further. He was very efficient, accurate and responsive and helped me with my project by doing the specific things I did not have the skills to do. 100% I will send more work his way if he is available."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/26.png" alt="WP - Interactive Web Map - Distributors Locations" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">WP - Interactive Web Map - Distributors Locations</h2>
+                    <p class="card-description">FireCraft® Safety Products Distributors - Interactive web map - Mapbox GL JS - Wordpress plugin</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel has been amazing! He is a very talented software designer and is always available to help or make changes. He is definitely my go-to guy. I wouldn't hesitate to use him again."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/27.png" alt="Course Map - Printable - Adobe Illustrator" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Course Map - Printable - Adobe Illustrator</h2>
+                    <p class="card-description">Course maps creation & design on both QGIS & Adobe Illustrator</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel was amazing. He interpreted the complex brief and executed the project perfectly. Very happy with my decision to work with him. He was prompt and communication was always clear."</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="images/28.png" alt="WP Website - VOTRE Plombier - Interactive Map & Listing" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">WP Website - VOTRE Plombier - Interactive Map & Listing</h2>
+                    <p class="card-description">I recently completed a WordPress website project integrating an interactive Mapbox web map for plumbers across Belgium. The site includes a detailed plumbers listing, a thumbs-up review system, and messaging between clients and plumbers via the Better Messages plugin. It uses Advanced Custom Fields (ACF) and WP Mail SMTP for custom fields and email management, while Ultimate Member manages user profiles and access. This platform offers a seamless, user-friendly experience for plumbers and clients.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/29.png" alt="WP Website - VOTRE Plombier - Interactive Map & Listing" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Driver Tracking Solution - Web Map -</h2>
+                    <p class="card-description">I developed a web map solution using Mapbox, JavaScript, and PHP for real-time truck driver tracking. The system includes dynamic weather updates, traffic congestion overlays, and vehicle data such as speed, altitude, and route history. Users can customize settings like satellite view, weather conditions, and recorded points visibility, all integrated with Google Street View for enhanced navigation.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Great Job Noufel. The solution is exactly what we wanted."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/30.png" alt="Djibouti Telecom - Interactive Web Map - Network Cables" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Djibouti Telecom - Interactive Web Map - Network Cables</h2>
+                    <p class="card-description">Showcasing Marine Network Cables for Djibouti Telecom website. Built with Mapbox GL JS</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/31.png" alt="WP- Web Interactive Map - Parking Lots in Pensacola (Florida, USA)" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">WP- Web Interactive Map - Parking Lots in Pensacola (Florida, USA)</h2>
+                    <p class="card-description">Interactive web map for Pensacola Parking website + Website design using Elementor</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel is patient and responsive. He answered all of my many questions, and was very quick with all of his responses and updates."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/32.png" alt="Bubble.io - Mobile App - Driving Instructions & Historical Crash Data" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Bubble.io - Mobile App - Driving Instructions & Historical Crash Data</h2>
+                    <p class="card-description">I developed a web map application using Mapbox to display historical crash data across the USA, providing real-time warnings to users when they approach crash-prone locations. The project integrates the Mapbox Directions API for driving directions with voice instructions, ensuring seamless navigation. Built on Bubble.io, the app is optimized for both desktop and mobile users, enhancing road safety awareness.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Model seeks to not only achieve your expectations, his experience and skills will result in a product that exceeds your expectations. Solid communication and very responsive."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/33.png" alt="WP - Interactive Web Map - Roads and Tracks for Motorcycle Adventures" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">WP - Interactive Web Map - Roads and Tracks for Motorcycle Adventures</h2>
+                    <p class="card-description">Interactive web map showing tracks & routes for motorcycle riding in Australia. Roads can be downloaded in KML & GPX.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Excellent work, went beyond what I thought could be done. Very knowledgable and willing to see it through. Noufel has perfect English which also helps when discussing the finer details."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/34.png" alt="Azure Web Map with DXF to GEOJSON Conversion and Transformations" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Azure Web Map with DXF to GEOJSON Conversion and Transformations</h2>
+                    <p class="card-description">Imports DXF files and converts them to GEOJSON format. The application includes features for rotating, scaling, and manipulating the imported data, providing users with a dynamic and user-friendly mapping experience. Leveraging technologies like Azure Maps, and custom back-end solutions. This solution is ideal for professionals needing precise control and visualization of architectural and engineering drawings on web platforms.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"This was our first project with Noufel and we are very happy with his work. He is very detail-oriented and receptive to our comments and corrections. His is very knowledgeable about GIS applications and JavaScript and is very patient. We certainly recommend him for your next project."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/35.png" alt="Interactive Property Information Mapping Solution" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Azure Web Map with DXF to GEOJSON Conversion and Transformations</h2>
+                    <p class="card-description">Developed an interactive property information mapping solution utilizing ArcGIS API, Mapbox GL JS, and Leaflet JS. The project involved creating a web-based map interface that displays property boundaries and highlights selected objects based on provided IDs. Key features included interactive layers with zoom-in/zoom-out functionality, a centered and highlighted object, and a "Generate Image" button that exports the map as a static image in PNG format using canvas.toDataURL.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/36.png" alt="Google Location Data Reader" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Google Location Data Reader</h2>
+                    <p class="card-description">Web interactive map allowing Google location data import (JSON). Each device is plotted with different color. Filtering by date & time & device tag. - Google Street View API.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/37.png" alt="Web Map (Raster Georeferencing + Vector tiles)" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Web Map (Raster Georeferencing + Vector tiles)</h2>
+                    <p class="card-description">Georeferencing Raster image and plotting it into an interactive web map + Vector tiles. - Filtering features.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/38.png" alt="Interactive Map with Search feature" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive Map with Search feature</h2>
+                    <p class="card-description">Client wanted an interactive map integration, showing products price and pan/zoom to display available items.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel understood completely what we needed and built the map feature in a very quick and efficient manner. He gave us updates every step of the way and was able to give the best options every time. Can't recommend enough!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/39.png" alt="Virtual Tours (MapboxGl Js) with Audio" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Virtual Tours (MapboxGl Js) with Audio</h2>
+                    <p class="card-description">- Designed Wordpress Website from PSD Mockup. - Different Tours, each tour has different stops and each stop plays assigned audio file. - Tours can be accessed only via subscription (for 24hrs or 48hrs).</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel knew his stuff! Every task we gave him he completed flawlessly. He ironed out every bug and implemented all changes we desired. We will definitely hire him for future projects."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/40.png" alt="Interactive Web Map for Cemetery plots in Wordpress" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive Web Map for Cemetery plots in Wordpress</h2>
+                    <p class="card-description">The client wanted to show new plots for a cemetery on his website. I suggested to do it with Mapbox, in order to get a realistic user experience in selecting/interacting with plots, with a Google Satellite view. The user can click on a plot and see if it's available to buy, if so he gets redirected to reservation page when clicking on order plot button.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/41.png" alt="Interactive Web Map for Countries/Cities Reservation for a project" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Interactive Web Map for Countries/Cities Reservation for a project</h2>
+                    <p class="card-description">The Client wanted an interactive web map where eventual buyers can make areas reservation for their project. They could select a whole country or city and make their reservation through a form which will send info to the admin. When an area is reserved, it's shown as HOLD with orange color, once it's sold it's then shown as SOLD with red color so that it can't be bought by other clients.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/42.png" alt="360° Street View Tour" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">360° Street View Tour</h2>
+                    <p class="card-description">Client needed Virtual Street View Tour image files to be displayed as 360 panorama. Also needed navigation arrows on street as on Google Street View. All this had to be connected to a Leaflet map. - Leaflet JS (for interactive web map) - Photo Sphere Viewer (for 360° panorama view) - Turf JS (for distance and bearing calculations) - PHP (reading SQL database and EXIF data from image files)</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel has been an amazing freelancer to work with. Very fluent English, fast communication, and revisions. The quality of work was top notch and was able to do everything that was requested and more! HIGHLY RECOMMENDED!!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/43.png" alt="Animated Inca Trail to Machu Picchu (3D)" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Animated Inca Trail to Machu Picchu (3D)</h2>
+                    <p class="card-description">This is a 3D visualization of the Inca trail to Machu Picchu. There are many waypoints and each one is presented through a left panel showing its related info. User can scroll up/down to fly through waypoints, reaching at the end the Machu Picchu site</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Completely satisfied with the web visualization! We had an idea of how the flow and visual would appear and Noufel delivered on the vision perfectly. Noufel responded timely to all inquires and communicated regular updates as progress was being made. His knowledge and skills with Mapbox API was evident and the end result exceeded our expectations. Overall, a great experience working with Noufel. I highly recommend Noufel for related work!!!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/44.png" alt="Squarespace Interactive map" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Squarespace Interactive map</h2>
+                    <p class="card-description">Developped an interactive web map using MapboxGL Js for trainers.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Noufel exceeded all expectations for the project. Produced amazing quality of work and had great communication throughout the whole project. Definitely will be hiring Noufel again in the future!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/45.png" alt="Google Street View Tracker" class="card-image">
+                <div class="card-content">
+                    <h2 class="card-title">Google Street View Tracker</h2>
+                    <p class="card-description">Developped a Chrome extension that allows to track and record taken routes on Google Street View + allows to add buildings by a simple right-click on the map.</p>
+                    <div class="rating-section">
+                        <div class="stars">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <p class="rating-comment">"Great person to work with. Handled my project. About to begin working on several others. I highly recommend"</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+
+     <script>
+        // Replace with your Mapbox access token
+        mapboxgl.accessToken = 'pk.eyJ1IjoianJvYmVydHMyOCIsImEiOiJjbTVyNGZ4NjEwNzFiMnJwc3k5YWtoMzFkIn0.kPDkLTvPmA5wctZTq2zhDA';
+
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/satellite-v9',
+            center: [-6.822842796234655, 34.024070273650764],
+            zoom: 17,
+            pitch: 60,
+            bearing: -17.6,
+            antialias: true
+        });
+
+        map.on('style.load', function () {
+            map.addLayer({
+                id: 'custom-threebox-model',
+                type: 'custom',
+                renderingMode: '3d',
+                onAdd: function (map, gl) {
+                    this.camera = new THREE.Camera();
+                    this.scene = new THREE.Scene();
+
+                    // Add ambient light
+                    const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
+                    this.scene.add(ambientLight);
+
+                    // Add directional light
+                    const directionalLight = new THREE.DirectionalLight(0xffffff, 0.8);
+                    directionalLight.position.set(100, 100, 100);
+                    this.scene.add(directionalLight);
+
+                    // Initialize Threebox
+                    window.tb = new Threebox(
+                        map,
+                        gl,
+                        { 
+                            defaultLights: true,
+                            enableSelectingObjects: true,
+                            enableDraggingObjects: true,
+                            enableRotatingObjects: true,
+                        }
+                    );
+
+                    window.tb.loadObj({
+                        obj: './hassan_tower.glb',
+                        type: 'glb',
+                        scale: 0.002,
+                        units: 'meters',
+                        rotation: { x: 90, y: 25, z: 0 }
+                    }, function (model) {
+                        model.setCoords([-6.822876, 34.024048]);
+                        model.setRotation({ x: 0, y: 0, z: 0 });
+                        model.addEventListener('ObjectDragged', onDraggedObject, false);
+                        window.tb.add(model);
+                    });
+
+                    window.tb.loadObj({
+                        obj: './darih_mohamed_v.glb',
+                        type: 'glb',
+                        scale: 25,
+                        units: 'meters',
+                        rotation: { x: 90, y: 25, z: 0 }
+                    }, function (model) {
+                        model.setCoords([-6.821519, 34.022562]);
+                        model.setRotation({ x: 0, y: 0, z: 0 });
+                        model.addEventListener('ObjectDragged', onDraggedObject, false);
+                        window.tb.add(model);
+                    });
+
+                    window.tb.loadObj({
+                        obj: './theatre1.glb',
+                        type: 'glb',
+                        scale: 0.5,
+                        units: 'meters',
+                        rotation: { x: 90, y: 180, z: 0 }
+                    }, function (model) {
+                        model.setCoords([-6.81831, 34.024249]);
+                        model.setRotation({ x: 0, y: 0, z: 0 });
+                        model.addEventListener('ObjectDragged', onDraggedObject, false);
+                        window.tb.add(model);
+                    });
+
+                    window.tb.loadObj({
+                        obj: './mohamed6_tower.glb',
+                        type: 'glb',
+                        scale: 1,
+                        units: 'meters',
+                        rotation: { x: 90, y: 180, z: 0 }
+                    }, function (model) {
+                        model.setCoords([-6.805588, 34.017984]);
+                        model.setRotation({ x: 0, y: 0, z: 0 });
+                        model.addEventListener('ObjectDragged', onDraggedObject, false);
+                        window.tb.add(model);
+                    });
+
+                    function onDraggedObject(e) {
+                        let draggedObject = e.detail.draggedObject; // the object dragged
+                        console.log(draggedObject);
+                    }
+                },
+                render: function (gl, matrix) {
+                    window.tb.update();
+                }
+            });
+        });
+
+        // Add navigation controls
+        map.addControl(new mapboxgl.NavigationControl());
+
+        // Rotate the map continuously
+        let userInteracting = false;
+        map.on('mousedown', () => { userInteracting = true; });
+        map.on('mouseup', () => { userInteracting = false; });
+        map.on('dragend', () => { userInteracting = false; });
+        map.on('touchstart', () => { userInteracting = true; });
+        map.on('touchend', () => { userInteracting = false; });
+
+        function rotateCamera(timestamp) {
+            if (!userInteracting) {
+                map.rotateTo((timestamp / 100) % 360, { duration: 0 });
+            }
+            requestAnimationFrame(rotateCamera);
+        }
+    </script>
+</body>
+</html>
